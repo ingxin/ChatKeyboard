@@ -1,7 +1,11 @@
+1. 添加仓库
+```
 repositories {
     maven { url "https://dl.bintray.com/ingxin/maven" }
 }
-
+```
+2. 添加依赖
+```
 dependencies {
     //解析表情（必须）
     implementation ''com.xingxin.android:emoticons:1.1.3'
@@ -12,3 +16,4 @@ dependencies {
     //默认表情库(非必须)
     implementation 'com.xingxin.android:emoticions_default:1.0.0'
 }
+```
