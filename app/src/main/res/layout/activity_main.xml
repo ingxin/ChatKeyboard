@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.ingxin.chatkeyboard.lib.view.SoftHandleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--面板-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--上方top bar 容器-->
+        <LinearLayout
+            android:id="@+id/ckb_top_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cn.ingxin.chatkeyboard.lib.view.KEditText
+                    android:id="@+id/et_input"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxHeight="100dp"
+                    android:maxLines="6"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/send"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="发送" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/emoji"
+                    android:layout_width="wrap_content"
+                    android:text="弹出/收起表情"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/pop_soft"
+                    android:layout_width="wrap_content"
+                    android:text="弹出键盘"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/hide_soft"
+                    android:layout_width="wrap_content"
+                    android:text="收起键盘"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--下发容器-->
+        <FrameLayout
+            android:id="@+id/ckb_face_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+    <!--内容布局-->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:gravity="bottom"
+        android:text="1133"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+</cn.ingxin.chatkeyboard.lib.view.SoftHandleLayout>

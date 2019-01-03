@@ -1,0 +1,26 @@
+/**
+ * 版本管理
+ */
+
+//创建空映射(key-value形式，字典)
+def build_versions = [:]
+
+build_versions.min_sdk = 11
+build_versions.target_sdk = 25
+build_versions.compile_sdk = 25
+
+//将编译信息添加到ext
+ext.build_versions = build_versions
+
+//依赖版本
+def deps = [:]
+//定义support版本
+def supportVersion = '25.3.1'
+
+deps.recyclerview = "com.android.support:recyclerview-v7:$supportVersion"
+deps.appcompat = "com.android.support:appcompat-v7:$supportVersion"
+
+//将依赖添加到ext
+ext.deps = deps
+
+
