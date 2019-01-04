@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .with(faceContainer)
-                //自定义表情展示容器
-                .setCustomFragment(EmoticonPageFragment.newInstance())
+//                //自定义表情展示容器
+//                .setCustomFragment(EmoticonPageFragment.newInstance())
                 .build();
     }
 

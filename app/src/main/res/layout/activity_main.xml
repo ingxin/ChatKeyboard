@@ -73,7 +73,7 @@
 
         </LinearLayout>
 
-        <!--下发容器-->
+        <!--表情容器-->
         <FrameLayout
             android:id="@+id/ckb_face_container"
             android:layout_width="match_parent"
